@@ -43,7 +43,6 @@ public class Hábitat_Aviarios extends Hábitat{
         return "Hábitat_Aviarios{" +
                 "temperatura=" + temperatura +
                 ", humedad=" + humedad +
-                ", tipodeaves='" + tipodeaves + '\'' +
                 ", tipodealimentacion='" + tipodealimentacion + '\'' +
                 ", tipodeclima='" + tipodeclima + '\'' +
                 ", tipodevegetacion='" + tipodevegetacion + '\'' +

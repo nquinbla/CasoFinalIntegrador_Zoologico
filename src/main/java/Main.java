@@ -37,6 +37,14 @@ public class Main {         // Clase principal donde se ejecutará el programa
                 scanner.nextLine(); // consume newline
 
                 if (choiceHabitats ==1) {
+                    if (choice ==1) { // Tipos de hábitats
+                        System.out.println("------------------ Tipos ------------------");
+                        System.out.println("1. Crear un hábitat acuático");
+                        System.out.println("2. Crear un hábitat terrestre");
+                        System.out.println("3. Crear un hábitat aéreo");
+                        System.out.println("4. Volver al menú principal");
+
+
                     System.out.println("Ingrese la temperatura del hábitat:");
                     float temperatura = scanner.nextFloat();
 
@@ -63,6 +71,8 @@ public class Main {         // Clase principal donde se ejecutará el programa
                 System.out.println("------------------ CUIDADO DE LOS ANIMALES ------------------");
 
 
+        } else if (choice == 6) { // Salir
+            break;
         }
     }
 }

@@ -4,15 +4,13 @@ package Hábitats;
 public class Hábitat_Acuático extends Hábitat{
     String tipodeagua;
     String tipodecoral;
-    String tipodepeces;
     String tipodeplantas;
 
     // [2] CONSTRUCTOR
-    public Hábitat_Acuático(float temperatura, float humedad, boolean limpieza, String tamaño, String tipodeagua, String tipodecoral, String tipodepeces, String tipodeplantas) {
+    public Hábitat_Acuático(float temperatura, float humedad, boolean limpieza, String tamaño, String tipodeagua, String tipodecoral,String tipodeplantas) {
         super(temperatura, humedad, limpieza, tamaño);
         this.tipodeagua = tipodeagua;
         this.tipodecoral = tipodecoral;
-        this.tipodepeces = tipodepeces;
         this.tipodeplantas = tipodeplantas;
     }
 
@@ -32,13 +30,6 @@ public class Hábitat_Acuático extends Hábitat{
         this.tipodecoral = tipodecoral;
     }
 
-    public String getTipodepeces() {
-        return tipodepeces;
-    }
-    public void setTipodepeces(String tipodepeces) {
-        this.tipodepeces = tipodepeces;
-    }
-
     public String getTipodeplantas() {
         return tipodeplantas;
     }
@@ -54,7 +45,6 @@ public class Hábitat_Acuático extends Hábitat{
                 ", humedad=" + humedad +
                 ", tipodeagua='" + tipodeagua + '\'' +
                 ", tipodecoral='" + tipodecoral + '\'' +
-                ", tipodepeces='" + tipodepeces + '\'' +
                 ", tipodeplantas='" + tipodeplantas + '\'' +
                 '}';
     }

@@ -15,12 +15,6 @@ public class Hábitat_Aviarios extends Hábitat{
     }
 
     // [3] MÉTODOS
-    public String getTipodeaves() {
-        return tipodeaves;
-    }
-    public void setTipodeaves(String tipodeaves) {
-        this.tipodeaves = tipodeaves;
-    }
 
     public String getTipodealimentacion() {
         return tipodealimentacion;

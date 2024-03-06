@@ -44,21 +44,74 @@ public class Main {         // Clase principal donde se ejecutará el programa
                         System.out.println("3. Crear un hábitat aéreo");
                         System.out.println("4. Volver al menú principal");
 
+                        if (choice == 1) { // Crear un hábitat acuático
+                            System.out.println("Ingrese la temperatura del hábitat:");
+                            float temperatura = scanner.nextFloat();
+                            System.out.println("Ingrese la humedad del hábitat:");
+                            float humedad = scanner.nextFloat();
+                            System.out.println("Ingrese el tamaño del hábitat:");
+                            String tamaño = scanner.nextLine();
+                            System.out.println("¿El hábitat está limpio? (true/false):");
+                            boolean limpieza = scanner.nextBoolean();
 
-                    System.out.println("Ingrese la temperatura del hábitat:");
-                    float temperatura = scanner.nextFloat();
+                            System.out.println("Ingrese el tipo de agua:");
+                            String tipodeagua = scanner.nextLine();
+                            System.out.println("Ingrese el tipo de coral:");
+                            String tipodecoral = scanner.nextLine();
+                            System.out.println("Ingrese el tipo de plantas:");
+                            String tipodeplantas = scanner.nextLine();
 
-                    System.out.println("Ingrese la humedad del hábitat:");
-                    float humedad = scanner.nextFloat();
+                            Hábitat hábitat = new Hábitat(temperatura, humedad, limpieza, tamaño);
+                            System.out.println("Hábitat creado: " + hábitat.toString());
 
-                    System.out.println("Ingrese el tamaño del hábitat:");
-                    String tamaño = scanner.nextLine();
+                        } if (choice ==2) { // Crear un hábitat terrestre
+                            System.out.println("Ingrese la temperatura del hábitat:");
+                            float temperatura = scanner.nextFloat();
+                            System.out.println("Ingrese la humedad del hábitat:");
+                            float humedad = scanner.nextFloat();
+                            System.out.println("Ingrese el tamaño del hábitat:");
+                            String tamaño = scanner.nextLine();
+                            System.out.println("¿El hábitat está limpio? (true/false):");
+                            boolean limpieza = scanner.nextBoolean();
 
-                    System.out.println("¿El hábitat está limpio? (true/false):");
-                    boolean limpieza = scanner.nextBoolean();
+                            System.out.println("Ingrese el tipo de alimentación:");
+                            String tipodealimentacion = scanner.nextLine();
+                            System.out.println("Ingrese el tipo de clima:");
+                            String tipodeclima = scanner.nextLine();
+                            System.out.println("Ingrese el tipo de vegetación:");
+                            String tipodevegetacion = scanner.nextLine();
 
-                    Hábitat hábitat = new Hábitat(temperatura, humedad, limpieza, tamaño);
-                    System.out.println("Hábitat creado: " + hábitat.toString());
+                            Hábitat hábitat = new Hábitat(temperatura, humedad, limpieza, tamaño);
+                            System.out.println("Hábitat creado: " + hábitat.toString());
+
+                        } if (choice ==3) { // Crear un hábitat aéreo
+                            System.out.println("Ingrese la temperatura del hábitat:");
+                            float temperatura = scanner.nextFloat();
+                            System.out.println("Ingrese la humedad del hábitat:");
+                            float humedad = scanner.nextFloat();
+                            System.out.println("Ingrese el tamaño del hábitat:");
+                            String tamaño = scanner.nextLine();
+                            System.out.println("¿El hábitat está limpio? (true/false):");
+                            boolean limpieza = scanner.nextBoolean();
+
+                            System.out.println("Ingrese el tipo de alimentación:");
+                            String tipodealimentacion = scanner.nextLine();
+                            System.out.println("Ingrese el tipo de clima:");
+                            String tipodeclima = scanner.nextLine();
+                            System.out.println("Ingrese el tipo de vegetación:");
+                            String tipodevegetacion = scanner.nextLine();
+
+                            Hábitat hábitat = new Hábitat(temperatura, humedad, limpieza, tamaño);
+                            System.out.println("Hábitat creado: " + hábitat.toString());
+
+                        } if (choice ==4) { // Volver al menú principal
+                            continue;
+
+                        }
+
+                        }
+
+
                 } else if (choiceHabitats ==2) {
                     System.out.println("Hábitats registrados:");
                     for (Hábitat hábitat : hábitat) {

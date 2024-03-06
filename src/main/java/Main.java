@@ -64,7 +64,8 @@ public class Main {         // Clase principal donde se ejecutará el programa
                             Hábitat hábitat = new Hábitat(temperatura, humedad, limpieza, tamaño);
                             System.out.println("Hábitat creado: " + hábitat.toString());
 
-                        } if (choice ==2) { // Crear un hábitat terrestre
+                        }
+                        if (choice == 2) { // Crear un hábitat terrestre
                             System.out.println("Ingrese la temperatura del hábitat:");
                             float temperatura = scanner.nextFloat();
                             System.out.println("Ingrese la humedad del hábitat:");
@@ -84,7 +85,8 @@ public class Main {         // Clase principal donde se ejecutará el programa
                             Hábitat hábitat = new Hábitat(temperatura, humedad, limpieza, tamaño);
                             System.out.println("Hábitat creado: " + hábitat.toString());
 
-                        } if (choice ==3) { // Crear un hábitat aéreo
+                        }
+                        if (choice == 3) { // Crear un hábitat aéreo
                             System.out.println("Ingrese la temperatura del hábitat:");
                             float temperatura = scanner.nextFloat();
                             System.out.println("Ingrese la humedad del hábitat:");
@@ -104,22 +106,22 @@ public class Main {         // Clase principal donde se ejecutará el programa
                             Hábitat hábitat = new Hábitat(temperatura, humedad, limpieza, tamaño);
                             System.out.println("Hábitat creado: " + hábitat.toString());
 
-                        } if (choice ==4) { // Volver al menú principal
+                        }
+                        if (choice == 4) { // Volver al menú principal
                             continue;
-
                         }
-
-                        }
-
-
+                    }
+                    // Si el usuario selecciona la opción 2, se mostrarán los hábitats
                 } else if (choiceHabitats ==2) {
                     System.out.println("Hábitats registrados:");
                     for (Hábitat hábitat : hábitat) {
                         System.out.println(hábitat.toString());
                     }
+                    // Si el usuario selecciona la opción 3, volverá al menú principal
                 } else if (choiceHabitats ==3) {
                     continue;
                 }
+                // Si el usuario selecciona la opción 2, se mostrarán los hábitats
             } if (choice == 2) { //  Cuidado de los animales
                 System.out.println("------------------ CUIDADO DE LOS ANIMALES ------------------");
 

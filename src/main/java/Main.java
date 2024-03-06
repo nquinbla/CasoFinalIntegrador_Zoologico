@@ -35,7 +35,22 @@ public class Main {         // Clase principal donde se ejecutará el programa
                 int choiceHabitats = scanner.nextInt();
                 scanner.nextLine(); // consume newline
 
-                if
+                if (choiceHabitats ==1) {
+                    System.out.println("Ingrese la temperatura del hábitat:");
+                    float temperatura = scanner.nextFloat();
+
+                    System.out.println("Ingrese la humedad del hábitat:");
+                    float humedad = scanner.nextFloat();
+
+                    System.out.println("Ingrese el tamaño del hábitat:");
+                    String tamaño = scanner.nextLine();
+
+                    System.out.println("¿El hábitat está limpio? (true/false):");
+                    boolean limpieza = scanner.nextBoolean();
+
+                    Hábitat hábitat = new Hábitat(temperatura, humedad, limpieza, tamaño);
+                    System.out.println("Hábitat creado: " + hábitat.toString());
+                }
             }
 
 

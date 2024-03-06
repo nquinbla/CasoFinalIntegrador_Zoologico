@@ -16,11 +16,13 @@ public class Main {         // Clase principal donde se ejecutará el programa
         while (true) {
             System.out.println("Bienvenido al zoológico de Arapiles, por favor, seleccione una opción:");
             System.out.println("1. Hábitats");
-            System.out.println("2. Animales");
+            System.out.println("2. Cuidado de los Animales");
             System.out.println("3. Visitantes");
             System.out.println("4. Recursos");
             System.out.println("5. Mantenimiento y Seguridad");
             System.out.println("6. Salir");
+
+
 
         }
     }

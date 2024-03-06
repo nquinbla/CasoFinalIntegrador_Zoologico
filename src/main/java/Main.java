@@ -128,6 +128,20 @@ public class Main {         // Clase principal donde se ejecutará el programa
                 System.out.println("2. Ver animales");
                 System.out.println("3. Volver al menú principal");
 
+                int choiceAnimales = scanner.nextInt();
+                scanner.nextLine(); // consume newline
+
+                if (choice ==1) { // Tipos de animales
+                    System.out.println("------------------ Tipos ------------------");
+                    System.out.println("1. Crear un animal acuático");
+                    System.out.println("2. Crear un animal terrestre");
+                    System.out.println("3. Crear un animal aéreo");
+                    System.out.println("4. Volver al menú principal");
+
+                    if (choice )
+
+                }
+
 
         } else if (choice == 6) { // Salir
             break;

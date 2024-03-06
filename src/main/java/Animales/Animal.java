@@ -14,7 +14,7 @@ public class Animal { // atributos
 
     // [2] CONSTRUCTORES
     // Constructor con todos los atributos
-    public Animal(String nombre, String edad, String sexo, String especie, String peso, String estatura, String color, boolean esterilizado, boolean vacunado {
+    public Animal(String nombre, String edad, String sexo, String especie, String peso, String estatura, String color, boolean esterilizado, boolean vacunado) {
         this.nombre = nombre;
         this.edad = edad;
         this.sexo = sexo;
@@ -96,6 +96,45 @@ public class Animal { // atributos
     public void setColor(String color) {
         this.color = color;
     }
+
+// [3.8] Esterilizado
+    // Método para obtener si el animal está esterilizado
+    public boolean isEsterilizado() {
+        return esterilizado;
+    }
+    // Método para establecer si el animal está esterilizado
+    public void setEsterilizado(boolean esterilizado) {
+        this.esterilizado = esterilizado;
+    }
+
+    // [3.9] Vacunado
+    // Método para obtener si el animal está vacunado
+    public boolean isVacunado() {
+        return vacunado;
+    }
+    // Método para establecer si el animal está vacunado
+    public void setVacunado(boolean vacunado) {
+        this.vacunado = vacunado;
+    }
+
+    // [4] MÉTODO toString
+    // Método para mostrar la información del animal
+    @Override
+    public String toString() {
+        return "Animal{" +
+                "nombre='" + nombre + '\'' +
+                ", edad='" + edad + '\'' +
+                ", sexo='" + sexo + '\'' +
+                ", especie='" + especie + '\'' +
+                ", peso='" + peso + '\'' +
+                ", estatura='" + estatura + '\'' +
+                ", color='" + color + '\'' +
+                ", esterilizado=" + esterilizado +
+                ", vacunado=" + vacunado +
+                '}';
+    }
+
+
 
 
 

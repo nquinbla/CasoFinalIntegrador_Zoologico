@@ -3,6 +3,9 @@ Ejercicio de java en IntelIJ de la unidad 4 de POO (programación orientada a ob
 
 LINK: https://github.com/nquinbla/CasoFinalIntegrador_Zoologico.git
 
+## <u>FUNCIONAMIENTO</u>
+El programa funciona de tal manera que al entrar al zoológico te pregunta si eres visitante o trabajador del zoo. Depende de tu elección podrás hacer ciertas cosas en una que en la otra no y viceversa. 
+
 ## <u>MÓDULOS DEL SISTEMA</u>
 animales, visitantes y habitats
 

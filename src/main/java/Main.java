@@ -138,7 +138,80 @@ public class Main {         // Clase principal donde se ejecutará el programa
                     System.out.println("3. Crear un animal aéreo");
                     System.out.println("4. Volver al menú principal");
 
-                    if (choice )
+                    if (choice == 1) { // Crear un animal acuatico
+                        System.out.println("Ingrese el nombre del animal:");
+                        String nombre = scanner.nextLine();
+                        System.out.println("Ingrese la edad del animal:");
+                        String edad = scanner.nextLine();
+                        System.out.println("Ingrese el sexo del animal:");
+                        String sexo = scanner.nextLine();
+                        System.out.println("Ingrese la especie del animal:");
+                        String especie = scanner.nextLine();
+                        System.out.println("Ingrese el peso del animal:");
+                        String peso = scanner.nextLine();
+                        System.out.println("Ingrese la estatura del animal:");
+                        String estatura = scanner.nextLine();
+                        System.out.println("Ingrese el color del animal:");
+                        String color = scanner.nextLine();
+                        System.out.println("¿El animal está esterilizado? (true/false):");
+                        boolean esterilizado = scanner.nextBoolean();
+                        System.out.println("¿El animal está vacunado? (true/false):");
+                        boolean vacunado = scanner.nextBoolean();
+
+                        Animal animal = new Animal(nombre, edad, sexo, especie, peso, estatura, color, esterilizado, vacunado);
+                        System.out.println("Animal creado: " + animal.toString());
+                        animales.add(animal);
+
+                    } if (choice ==2) { // Crear un animal terrestre
+                        System.out.println("Ingrese el nombre del animal:");
+                        String nombre = scanner.nextLine();
+                        System.out.println("Ingrese la edad del animal:");
+                        String edad = scanner.nextLine();
+                        System.out.println("Ingrese el sexo del animal:");
+                        String sexo = scanner.nextLine();
+                        System.out.println("Ingrese la especie del animal:");
+                        String especie = scanner.nextLine();
+                        System.out.println("Ingrese el peso del animal:");
+                        String peso = scanner.nextLine();
+                        System.out.println("Ingrese la estatura del animal:");
+                        String estatura = scanner.nextLine();
+                        System.out.println("Ingrese el color del animal:");
+                        String color = scanner.nextLine();
+                        System.out.println("¿El animal está esterilizado? (true/false):");
+                        boolean esterilizado = scanner.nextBoolean();
+                        System.out.println("¿El animal está vacunado? (true/false):");
+                        boolean vacunado = scanner.nextBoolean();
+
+                        Animal animal = new Animal(nombre, edad, sexo, especie, peso, estatura, color, esterilizado, vacunado);
+                        System.out.println("Animal creado: " + animal.toString());
+                        animales.add(animal);
+
+                    } if (choice ==3) { // Crear un animal aéreo
+                        System.out.println("Ingrese el nombre del animal:");
+                        String nombre = scanner.nextLine();
+                        System.out.println("Ingrese la edad del animal:");
+                        String edad = scanner.nextLine();
+                        System.out.println("Ingrese el sexo del animal:");
+                        String sexo = scanner.nextLine();
+                        System.out.println("Ingrese la especie del animal:");
+                        String especie = scanner.nextLine();
+                        System.out.println("Ingrese el peso del animal:");
+                        String peso = scanner.nextLine();
+                        System.out.println("Ingrese la estatura del animal:");
+                        String estatura = scanner.nextLine();
+                        System.out.println("Ingrese el color del animal:");
+                        String color = scanner.nextLine();
+                        System.out.println("¿El animal está esterilizado? (true/false):");
+                        boolean esterilizado = scanner.nextBoolean();
+                        System.out.println("¿El animal está vacunado? (true/false):");
+                        boolean vacunado = scanner.nextBoolean();
+
+                        Animal animal = new Animal(nombre, edad, sexo, especie, peso, estatura, color, esterilizado, vacunado);
+                        System.out.println("Animal creado: " + animal.toString());
+                        animales.add(animal);
+                    } if (choice ==4) {
+                        continue;
+                    }
 
                 }
 

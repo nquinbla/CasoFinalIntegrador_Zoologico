@@ -158,6 +158,13 @@ public class Main {         // Clase principal donde se ejecutará el programa
                         System.out.println("¿El animal está vacunado? (true/false):");
                         boolean vacunado = scanner.nextBoolean();
 
+                        System.out.println("Tipo de nado:");
+                        String tipodenado = scanner.nextLine();
+                        System.out.println("Tipo de aletas:");
+                        String tipodealetas = scanner.nextLine();
+                        System.out.println("Tipo de branquias:");
+                        String tipodebranquias = scanner.nextLine();
+
                         Animal animal = new Animal(nombre, edad, sexo, especie, peso, estatura, color, esterilizado, vacunado);
                         System.out.println("Animal creado: " + animal.toString());
                         animales.add(animal);
@@ -182,6 +189,11 @@ public class Main {         // Clase principal donde se ejecutará el programa
                         System.out.println("¿El animal está vacunado? (true/false):");
                         boolean vacunado = scanner.nextBoolean();
 
+                        System.out.println("Tipo de pelaje:");
+                        String tipodepelaje = scanner.nextLine();
+                        System.out.println("Tipo de patas:");
+                        String tipodepatas = scanner.nextLine();
+
                         Animal animal = new Animal(nombre, edad, sexo, especie, peso, estatura, color, esterilizado, vacunado);
                         System.out.println("Animal creado: " + animal.toString());
                         animales.add(animal);
@@ -205,6 +217,13 @@ public class Main {         // Clase principal donde se ejecutará el programa
                         boolean esterilizado = scanner.nextBoolean();
                         System.out.println("¿El animal está vacunado? (true/false):");
                         boolean vacunado = scanner.nextBoolean();
+
+                        System.out.println("Tipo de vuelo:");
+                        String tipodevuelo = scanner.nextLine();
+                        System.out.println("Tipo de plumaje:");
+                        String tipodeplumaje = scanner.nextLine();
+                        System.out.println("Tipo de pico:");
+                        String tipodepico = scanner.nextLine();
 
                         Animal animal = new Animal(nombre, edad, sexo, especie, peso, estatura, color, esterilizado, vacunado);
                         System.out.println("Animal creado: " + animal.toString());

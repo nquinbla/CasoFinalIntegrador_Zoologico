@@ -124,6 +124,9 @@ public class Main {         // Clase principal donde se ejecutará el programa
                 // Si el usuario selecciona la opción 2, se mostrarán los hábitats
             } if (choice == 2) { //  Cuidado de los animales
                 System.out.println("------------------ CUIDADO DE LOS ANIMALES ------------------");
+                System.out.println("1. Registrar un animal");
+                System.out.println("2. Ver animales");
+                System.out.println("3. Volver al menú principal");
 
 
         } else if (choice == 6) { // Salir

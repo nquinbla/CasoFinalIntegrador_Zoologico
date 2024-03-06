@@ -256,6 +256,13 @@ public class Main {         // Clase principal donde se ejecutará el programa
             System.out.println("Bienvenido al zoológico de Arapiles trabajador, por favor, seleccione una opción:");
             System.out.println("1. Recursos");
             System.out.println("2. Mantenimiento y Seguridad");
+
+            int choice = scanner.nextInt();
+            scanner.nextLine(); // consume newline
+
+            if (choice == 1) {
+
+            }
 }
 }
 }

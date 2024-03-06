@@ -4,10 +4,10 @@ Ejercicio de java en IntelIJ de la unidad 4 de POO (programación orientada a ob
 LINK: https://github.com/nquinbla/CasoFinalIntegrador_Zoologico.git
 
 ## <u>FUNCIONAMIENTO</u>
-El programa funciona de tal manera que al entrar al zoológico te pregunta si eres visitante o trabajador del zoo. Depende de tu elección podrás hacer ciertas cosas en una que en la otra no y viceversa. 
+El programa funciona de tal manera que al entrar al zoológico te pregunta si eres visitante o trabajador del zoo. Depende de tu elección podrás hacer ciertas cosas en una que en la otra no y viceversa. Si escoges visitante, podrás hacer acciones de este, como ver un animal, registrar uno nuevo, ver sus cuidados y hábitats. Además de entrar al quiosco para la visualización de rutas dependiendo de tus preferencias y gustos entre animales acuáticos, aviários y terrestres, y disponer de toda la información que quiera. Por otra parte, si usted escoge trabajador, verá opciones de mantenimiento de los hábitats y del zoo junto a la seguridad de este con un sistema de monitoreo y sensores tanto para los animales como para los visitantes que entran.
+
 
 ## <u>MÓDULOS DEL SISTEMA</u>
-animales, visitantes y habitats
 
 ### [1] GESTIÓN DE HÁBITATS
 #### [1.1] Hábitats

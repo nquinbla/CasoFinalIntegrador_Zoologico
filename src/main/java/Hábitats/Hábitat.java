@@ -53,5 +53,16 @@ public class Hábitat {
         this.tamaño = tamaño;
     }
 
+    // [4] MÉTODO toString
+    // Método para imprimir el hábitat
+    @Override
+    public String toString() {
+        return "Hábitat{" +
+                "temperatura=" + temperatura +
+                ", humedad=" + humedad +
+                ", limpieza=" + limpieza +
+                ", tamaño='" + tamaño + '\'' +
+                '}';
+    }
 
 }

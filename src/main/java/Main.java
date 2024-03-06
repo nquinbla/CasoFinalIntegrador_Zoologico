@@ -1,4 +1,5 @@
-import Animales.Animal // Importamos la clase Animal
+import Animales.Animal; // Importamos la clase Animal
+import Hábitats.Hábitat; // Importamos la clase Hábitat
 
 import java.util.ArrayList; // Importamos la clase ArrayList
 import java.util.List; // Importamos la clase List
@@ -26,7 +27,7 @@ public class Main {         // Clase principal donde se ejecutará el programa
             scanner.nextLine(); // consume newline
 
             // Dependiendo de la opción seleccionada por el usuario, se ejecutará un bloque de código
-            if (choice ==1) {
+            if (choice ==1) { // Hábitats
                 System.out.println("------------------ HÁBITATS ------------------");
                 System.out.println("1. Crear un hábitat");
                 System.out.println("2. Ver hábitats");
@@ -50,8 +51,16 @@ public class Main {         // Clase principal donde se ejecutará el programa
 
                     Hábitat hábitat = new Hábitat(temperatura, humedad, limpieza, tamaño);
                     System.out.println("Hábitat creado: " + hábitat.toString());
+                } else if (choiceHabitats ==2) {
+                    System.out.println("Hábitats registrados:");
+                    for (Hábitat hábitat : hábitat) {
+                        System.out.println(hábitat.toString());
+                    }
+                } else if (choiceHabitats ==3) {
+                    continue;
                 }
-            }
+            } if (choice == 2) { //  Cuidado de los animales
+                System.out.println("------------------ CUIDADO DE LOS ANIMALES ------------------");
 
 
         }

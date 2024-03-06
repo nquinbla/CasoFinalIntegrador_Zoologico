@@ -22,6 +22,21 @@ public class Main {         // Clase principal donde se ejecutará el programa
             System.out.println("5. Mantenimiento y Seguridad");
             System.out.println("6. Salir");
 
+            int choice = scanner.nextInt();
+            scanner.nextLine(); // consume newline
+
+            // Dependiendo de la opción seleccionada por el usuario, se ejecutará un bloque de código
+            if (choice ==1) {
+                System.out.println("------------------ HÁBITATS ------------------");
+                System.out.println("1. Crear un hábitat");
+                System.out.println("2. Ver hábitats");
+                System.out.println("3. Volver al menú principal");
+
+                int choiceHabitats = scanner.nextInt();
+                scanner.nextLine(); // consume newline
+
+                if
+            }
 
 
         }

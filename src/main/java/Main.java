@@ -15,13 +15,16 @@ public class Main {         // Clase principal donde se ejecutará el programa
 
         // Creamos un bucle para que el usuario pueda realizar varias acciones
         while (true) {
+            System.out.println("Bienvenido al zoológico de Arapiles, por favor, elija una opción:");
+            System.out.println("1. Visitante");
+            System.out.println("2. Cuidado de los Animales");
+
+        } if (choice == 1) { // Visitante
             System.out.println("Bienvenido al zoológico de Arapiles, por favor, seleccione una opción:");
             System.out.println("1. Hábitats");
             System.out.println("2. Cuidado de los Animales");
             System.out.println("3. Visitantes");
-            System.out.println("4. Recursos");
-            System.out.println("5. Mantenimiento y Seguridad");
-            System.out.println("6. Salir");
+            System.out.println("4. Salir");
 
             int choice = scanner.nextInt();
             scanner.nextLine(); // consume newline
@@ -232,11 +235,27 @@ public class Main {         // Clase principal donde se ejecutará el programa
                         continue;
                     }
 
-                }
+                } if (choice ==2) { // Ver animales registrados
+                    System.out.println("Animales registrados:");
+                    for (Animal animal : animales) {
+                        System.out.println(animal.toString());
+                    }
+                } if (choice ==3) { // Volver al menú principal
+                    continue; }
+
+                // Si el usuario selecciona la opción 3, volverá al menú principal
+            } else if (choice == 3) { // Visitantes
+                System.out.println("------------------ VISITANTES ------------------");
+
 
 
         } else if (choice == 6) { // Salir
             break;
         }
-    }
+    }  if (choice == 2) { // Personal
+            System.out.println("Bienvenido al zoológico de Arapiles trabajador, por favor, seleccione una opción:");
+            System.out.println("1. Recursos");
+            System.out.println("2. Mantenimiento y Seguridad");
+}
+}
 }

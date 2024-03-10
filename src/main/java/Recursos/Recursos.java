@@ -5,10 +5,9 @@ public class Recursos {
     private String tipo;
     private int cantidad;
 
-    public Recursos(String name, String type, int quantity) {
+    public Recursos(String name, String type, int cantidad) {
         this.nombre = name;
-        this.tipo = type;
-        this.cantidad = quantity;
+        this.cantidad = cantidad;
     }
 
     // getters and setters
@@ -18,14 +17,6 @@ public class Recursos {
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
-    }
-
-    public String getTipo() {
-        return tipo;
-    }
-
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
     }
 
     public int getCantidad() {

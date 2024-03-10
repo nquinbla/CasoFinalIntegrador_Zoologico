@@ -29,7 +29,7 @@ public class Seguridad {
         this.sensores = sensores;
     }
 
-    public void agregarCamara(Camara camara) {
+    public void agregarCamara(Cámara camara) {
         camaras.add(camara);
     }
 
@@ -37,7 +37,7 @@ public class Seguridad {
         sensores.add(sensor);
     }
 
-    public void eliminarCamara(Camara camara) {
+    public void eliminarCamara(Cámara camara) {
         camaras.remove(camara);
     }
 

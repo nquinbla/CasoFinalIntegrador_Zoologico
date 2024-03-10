@@ -1,6 +1,5 @@
 package Recursos;
 
-import Recursos.Recursos;
 
 import java.util.List;
 

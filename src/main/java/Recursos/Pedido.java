@@ -1,8 +1,5 @@
 package Recursos;
 
-import Recursos.Recursos;
-import Recursos.Proveedor;
-
 public class Pedido {
     private String idPedido;
     private Recursos recurso;

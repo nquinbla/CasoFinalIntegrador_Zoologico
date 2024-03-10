@@ -2,6 +2,7 @@ package Hábitats;
 
 // [1] CLASE HÁBITAT
 public class Hábitat {
+    private String nombre; // nombre del hábitat
     float temperatura; // temperatura del hábitat
     float humedad; // humedad del hábitat
     boolean limpieza; // limpieza del hábitat
@@ -9,7 +10,8 @@ public class Hábitat {
 
     // [2] CONSTRUCTOR
     // Constructor con todos los atributos
-    public Hábitat(float temperatura, float humedad, boolean limpieza, String tamaño) {
+    public Hábitat(String nombre, float temperatura, float humedad, boolean limpieza, String tamaño) {
+        this.nombre = nombre;
         this.temperatura = temperatura;
         this.humedad = humedad;
         this.limpieza = limpieza;
@@ -17,6 +19,15 @@ public class Hábitat {
     }
 
     // [3] MÉTODOS
+    // Método para obtener el nombre del hábitat
+    public String getNombre() {
+        return nombre;
+    }
+
+    // Método para establecer el nombre del hábitat
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
     // Método para obtener la temperatura del hábitat
     public float getTemperatura() {
         return temperatura;
@@ -58,6 +69,7 @@ public class Hábitat {
     @Override
     public String toString() {
         return "Hábitat{" +
+                "nombre='" + nombre + '\'' +
                 "temperatura=" + temperatura +
                 ", humedad=" + humedad +
                 ", limpieza=" + limpieza +

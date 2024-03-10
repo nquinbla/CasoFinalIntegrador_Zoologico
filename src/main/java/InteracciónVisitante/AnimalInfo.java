@@ -7,7 +7,7 @@ public class AnimalInfo {
     private String habitat;
     private String descripcion;
 
-    public AnimalInfo(String nombreAnimal, String especie, String dieta, String habitat, String descripcion) {
+    public AnimalInfo(String nombreAnimal, String especie, String dieta, String habitat, String descripcion, String estatura, String color, boolean esterilizado, boolean vacunado) {
         this.nombreAnimal = nombreAnimal;
         this.especie = especie;
         this.dieta = dieta;

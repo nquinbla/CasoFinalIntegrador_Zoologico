@@ -7,8 +7,8 @@ public class Hábitat_Aviarios extends Hábitat{
     String tipodevegetacion;
 
     // [2] CONSTRUCTOR
-    public Hábitat_Aviarios(float temperatura, float humedad, boolean limpieza, String tamaño,String tipodealimentacion, String tipodeclima, String tipodevegetacion) {
-        super(temperatura, humedad, limpieza, tamaño);
+    public Hábitat_Aviarios(String nombre, float temperatura, float humedad, boolean limpieza, String tamaño,String tipodealimentacion, String tipodeclima, String tipodevegetacion) {
+        super(nombre, temperatura, humedad, limpieza, tamaño);
         this.tipodealimentacion = tipodealimentacion;
         this.tipodeclima = tipodeclima;
         this.tipodevegetacion = tipodevegetacion;

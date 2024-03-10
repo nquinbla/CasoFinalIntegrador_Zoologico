@@ -7,8 +7,8 @@ public class Hábitat_Terrestre extends Hábitat{
     String tipodesuelo;
 
     // [2] CONSTRUCTOR
-    public Hábitat_Terrestre(float temperatura, float humedad, boolean limpieza, String tamaño, String tipodevegetacion, String tipodeclima, String tipodesuelo) {
-        super(temperatura, humedad, limpieza, tamaño);
+    public Hábitat_Terrestre(String nombre, float temperatura, float humedad, boolean limpieza, String tamaño, String tipodevegetacion, String tipodeclima, String tipodesuelo) {
+        super(nombre, temperatura, humedad, limpieza, tamaño);
         this.tipodevegetacion = tipodevegetacion;
         this.tipodeclima = tipodeclima;
         this.tipodesuelo = tipodesuelo;

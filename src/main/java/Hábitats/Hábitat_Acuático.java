@@ -7,8 +7,8 @@ public class Hábitat_Acuático extends Hábitat{
     String tipodeplantas;
 
     // [2] CONSTRUCTOR
-    public Hábitat_Acuático(float temperatura, float humedad, boolean limpieza, String tamaño, String tipodeagua, String tipodecoral,String tipodeplantas) {
-        super(temperatura, humedad, limpieza, tamaño);
+    public Hábitat_Acuático(String nombre, float temperatura, float humedad, boolean limpieza, String tamaño, String tipodeagua, String tipodecoral,String tipodeplantas) {
+        super( nombre, temperatura, humedad, limpieza, tamaño);
         this.tipodeagua = tipodeagua;
         this.tipodecoral = tipodecoral;
         this.tipodeplantas = tipodeplantas;

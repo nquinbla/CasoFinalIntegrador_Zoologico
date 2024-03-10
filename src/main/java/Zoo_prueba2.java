@@ -1,4 +1,7 @@
 import Animales.Animal;
+import Animales.Animal_Acuático;
+import Animales.Animal_Terrestre;
+import Animales.Animal_Aviario;
 import Hábitats.Hábitat;
 import MantenimientoSeguridad.*;
 import Recursos.*;
@@ -51,9 +54,65 @@ public class Zoo_prueba2 {
                     }
                 } else if (choiceVisitante == 2) {
                     System.out.println("Por favor, ingrese la información del nuevo animal:");
-                    // Aquí se implementarían las opciones para registrar un nuevo animal
-                    // Necesitarás recoger la información del animal y usarla para crear un nuevo objeto Animal
-                    // Luego, puedes agregar el nuevo animal a la lista de animales
+                    System.out.println("Ingrese el tipo de animal (1. Acuático, 2. Terrestre, 3. Aviario):");
+                    int tipoAnimal = scanner.nextInt();
+                    scanner.nextLine();
+
+                    System.out.println("Ingrese el nombre del animal:");
+                    String setNombre = scanner.nextLine();
+                    System.out.println("Ingrese la edad del animal:");
+                    String setEdad = scanner.nextLine();
+                    System.out.println("Ingrese el sexo del animal:");
+                    String setSexo = scanner.nextLine();
+                    System.out.println("Ingrese la especie del animal:");
+                    String setEspecie = scanner.nextLine();
+                    System.out.println("Ingrese el peso del animal:");
+                    String setPeso = scanner.nextLine();
+                    System.out.println("Ingrese la estatura del animal:");
+                    String setEstatura = scanner.nextLine();
+                    System.out.println("Ingrese el color del animal:");
+                    String setColor = scanner.nextLine();
+                    System.out.println("Ingrese si el animal está esterilizado (true/false):");
+                    boolean setEsterilizado = scanner.nextBoolean();
+                    System.out.println("Ingrese si el animal está vacunado (true/false):");
+                    boolean setVacunado = scanner.nextBoolean();
+
+                    Animal nuevoAnimal = null;
+
+                    switch (tipoAnimal) {
+                        case 1: // Animal Acuático
+                            System.out.println("Ingrese si el animal nada");
+                            String getNadar = scanner.nextLine();
+                            System.out.println("Ingrese si el animal tiene aletas");
+                            String getAletas = scanner.nextLine();
+                            System.out.println("Ingrese si el animal tiene branquias");
+                            String getBranquias = scanner.nextLine();
+                            nuevoAnimal = new Animal_Acuático( setNombre, setEdad, setSexo, setEspecie, setPeso, setEstatura, setColor, setEsterilizado, setVacunado, getNadar, getAletas, getBranquias);
+                        case 2: // Animal Terrestre
+                            System.out.println("Ingrese el pelaje del animal");
+                            String getPelaje = scanner.nextLine();
+                            System.out.println("Ingrese el número de patas del animal");
+                            String getPatas = scanner.nextLine();
+                            nuevoAnimal = new Animal_Terrestre(setNombre, setEdad, setSexo, setEspecie, setPeso, setEstatura, setColor, setEsterilizado, setVacunado, getPelaje, getPatas);
+
+                        case 3: // Animal Aviario
+                            System.out.println("Ingrese si el animal vuela");
+                            String getVolar = scanner.nextLine();
+                            System.out.println("Ingrese el tipo de plumaje del animal");
+                            String getPlumaje = scanner.nextLine();
+                            System.out.println("Ingrese el tipo de pico del animal");
+                            String getPico = scanner.nextLine();
+                            nuevoAnimal = new Animal_Aviario(setNombre, setEdad, setSexo, setEspecie, setPeso, setEstatura, setColor, setEsterilizado, setVacunado, getVolar, getPlumaje, getPico);
+
+                        default:
+                            System.out.println("Tipo de animal no válido.");
+                            break;
+                    }
+
+                    if (nuevoAnimal != null) {
+                        animales.add(nuevoAnimal);
+                        System.out.println("El nuevo animal ha sido registrado exitosamente.");
+                    }
                 } else if (choiceVisitante == 3) {
                     System.out.println("Por favor, ingrese el nombre del hábitat que desea ver:");
                     String nombreHabitat = scanner.nextLine();

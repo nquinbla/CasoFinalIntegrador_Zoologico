@@ -40,13 +40,34 @@ public class Zoo_prueba2 {
                 scanner.nextLine();
 
                 if (choiceVisitante == 1) {
-                    // Aquí se implementarían las opciones para ver un animal
+                    System.out.println("Por favor, ingrese el nombre del animal que desea ver:");
+                    String nombreAnimal = scanner.nextLine();
+                    AnimalInfo infoAnimal = quiosco.obtenerInfoAnimal(nombreAnimal);
+                    if (infoAnimal != null) {
+                        System.out.println("Información del animal: " + infoAnimal.getNombreAnimal());
+                        // Aquí se mostraría más información del animal
+                    } else {
+                        System.out.println("Lo siento, no se encontró el animal.");
+                    }
                 } else if (choiceVisitante == 2) {
+                    System.out.println("Por favor, ingrese la información del nuevo animal:");
                     // Aquí se implementarían las opciones para registrar un nuevo animal
+                    // Necesitarás recoger la información del animal y usarla para crear un nuevo objeto Animal
+                    // Luego, puedes agregar el nuevo animal a la lista de animales
                 } else if (choiceVisitante == 3) {
-                    // Aquí se implementarían las opciones para ver los cuidados y hábitats de los animales
+                    System.out.println("Por favor, ingrese el nombre del hábitat que desea ver:");
+                    String nombreHabitat = scanner.nextLine();
+                    HabitatInfo infoHabitat = quiosco.obtenerInfoHabitat(nombreHabitat);
+                    if (infoHabitat != null) {
+                        System.out.println("Información del hábitat: " + infoHabitat.getNombreHabitat());
+                        // Aquí se mostraría más información del hábitat
+                    } else {
+                        System.out.println("Lo siento, no se encontró el hábitat.");
+                    }
                 } else if (choiceVisitante == 4) {
+                    System.out.println("Bienvenido al quiosco, por favor, seleccione una opción:");
                     // Aquí se implementarían las opciones para entrar al quiosco
+                    // Podrías tener opciones para ver rutas basadas en las preferencias del visitante
                 } else if (choiceVisitante == 5) {
                     continue;
                 }

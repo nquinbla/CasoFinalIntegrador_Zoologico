@@ -29,7 +29,7 @@ public class Zoo_prueba2 {
             scanner.nextLine();
 
             if (choice == 1) { // Visitante
-                System.out.println("Bienvenido visitante, por favor, seleccione una opción:");
+                System.out.println("Bienvenido al zoológico virtual de Arapiles, visitante, por favor, seleccione una opción:");
                 System.out.println("1. Ver un animal");
                 System.out.println("2. Registrar un nuevo animal");
                 System.out.println("3. Ver cuidados y hábitats de los animales");
@@ -51,7 +51,7 @@ public class Zoo_prueba2 {
                     continue;
                 }
             } else if (choice == 2) { // Trabajador
-                System.out.println("Bienvenido al zoológico de Arapiles trabajador, por favor, seleccione una opción:");
+                System.out.println("Bienvenido al zoológico de Arapiles, trabajador, por favor, seleccione una opción:");
                 System.out.println("1. Recursos");
                 System.out.println("2. Mantenimiento y Seguridad");
                 System.out.println("3. Volver al menú principal");

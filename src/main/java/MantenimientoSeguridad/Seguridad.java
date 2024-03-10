@@ -3,21 +3,21 @@ package MantenimientoSeguridad;
 import java.util.List;
 
 public class Seguridad {
-    private List<Camara> camaras;
+    private List<Cámara> camaras;
     private List<Sensor> sensores;
 
-    public Seguridad(List<Camara> camaras, List<Sensor> sensores) {
+    public Seguridad(List<Cámara> camaras, List<Sensor> sensores) {
         this.camaras = camaras;
         this.sensores = sensores;
     }
 
     // getters y setters
 
-    public List<Camara> getCamaras() {
+    public List<Cámara> getCamaras() {
         return camaras;
     }
 
-    public void setCamaras(List<Camara> camaras) {
+    public void setCamaras(List<Cámara> camaras) {
         this.camaras = camaras;
     }
 

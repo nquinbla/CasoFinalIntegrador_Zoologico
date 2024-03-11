@@ -47,8 +47,7 @@ public class Zoo_prueba2 {
                     String nombreAnimal = scanner.nextLine();
                     AnimalInfo infoAnimal = quiosco.obtenerInfoAnimal(nombreAnimal);
                     if (infoAnimal != null) {
-                        System.out.println("Información del animal: " + infoAnimal.getNombreAnimal() + ", " + infoAnimal.getSexo + ", " + infoAnimal.getEdad() + ", " + infoAnimal.getEspecie() + ", " + infoAnimal.getPeso() + ", " + infoAnimal.getEstatura() + ", " + infoAnimal.getColor() + ", " + infoAnimal.isEsterilizado() + ", " + infoAnimal.isVacunado());                        // Aquí se mostraría más información del animal
-                    } else {
+                        System.out.println("Información del animal: " + infoAnimal.getNombreAnimal() + ", " + infoAnimal.getSexo() + ", " + infoAnimal.getEdad() + ", " + infoAnimal.getEspecie() + ", " + infoAnimal.getPeso() + ", " + infoAnimal.getEstatura() + ", " + infoAnimal.getColor() + ", " + infoAnimal.isEsterilizado() + ", " + infoAnimal.isVacunado());                    } else {
                         System.out.println("Lo siento, no se encontró el animal.");
                     }
                 } else if (choiceVisitante == 2) {

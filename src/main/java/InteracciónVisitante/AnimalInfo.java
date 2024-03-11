@@ -32,6 +32,13 @@ public class AnimalInfo {
 
     // existing getters and setters...
 
+    public String getNombreAnimal() {
+        return nombreAnimal;
+    }
+
+    public String getEspecie() {
+        return especie;
+    }
     public String getSexo() {
         return sexo;
     }

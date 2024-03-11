@@ -16,7 +16,7 @@ public class Quiosco {
     public AnimalInfo obtenerInfoAnimal(String nombreAnimal) {
         for (Animal animal : animales) {
             if (animal.getNombre().equals(nombreAnimal)) {
-                return new AnimalInfo(animal.getNombre(), animal.getSexo(), animal.getEdad(), animal.getEspecie(), animal.getPeso(), animal.getEstatura(), animal.getColor(), animal.isEsterilizado(), animal.isVacunado());
+                return new AnimalInfo(animal.getNombre(), animal.getEspecie(), animal.getDieta(), animal.getHabitat(), animal.getDescripcion(), animal.getSexo(), animal.getEdad(), animal.getPeso(), animal.getEstatura(), animal.getColor(), animal.isEsterilizado(), animal.isVacunado());
             }
         }
         return null; // Devuelve null si no se encuentra el animal

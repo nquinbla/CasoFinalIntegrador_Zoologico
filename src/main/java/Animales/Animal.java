@@ -134,6 +134,24 @@ public class Animal { // atributos
                 '}';
     }
 
+    @Override
+public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null || getClass() != obj.getClass()) {
+            return false;
+        }
+        Animal animal = (Animal) obj;
+        return esterilizado == animal.esterilizado && vacunado == animal.vacunado && nombre.equals(animal.nombre) && edad.equals(animal.edad) && sexo.equals(animal.sexo) && especie.equals(animal.especie) && peso.equals(animal.peso) && estatura.equals(animal.estatura) && color.equals(animal.color);
+    }
+
+    @Override
+    public int hashCode() {
+        return super.hashCode();
+    }
+
+
 
 
 

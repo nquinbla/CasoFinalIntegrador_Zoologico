@@ -2,15 +2,15 @@ package Animales;
 
 // [1] CLASE ANIMAL
 public class Animal { // atributos
-    String nombre;  // nombre
-    String edad;  // edad
-    String sexo; // sexo
-    String especie; // especie
-    String peso; // peso
-    String estatura; // estatura
-    String  color; // color
-    boolean esterilizado; // esterilizado
-    boolean vacunado; // vacunado
+    protected String nombre;  // nombre
+    protected String edad;  // edad
+    protected String sexo; // sexo
+    protected String especie; // especie
+    protected String peso; // peso
+    protected String estatura; // estatura
+    protected String  color; // color
+    protected boolean esterilizado; // esterilizado
+    protected boolean vacunado; // vacunado
 
     // [2] CONSTRUCTORES
     // Constructor con todos los atributos

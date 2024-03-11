@@ -86,12 +86,14 @@ public class Zoo_prueba2 {
                             System.out.println("Ingrese si el animal tiene branquias");
                             String getBranquias = scanner.nextLine();
                             nuevoAnimal = new Animal_Acuático( setNombre, setEdad, setSexo, setEspecie, setPeso, setEstatura, setColor, setEsterilizado, setVacunado, getNadar, getAletas, getBranquias);
+                            break;
                         case 2: // Animal Terrestre
                             System.out.println("Ingrese el pelaje del animal");
                             String getPelaje = scanner.nextLine();
                             System.out.println("Ingrese el número de patas del animal");
                             String getPatas = scanner.nextLine();
                             nuevoAnimal = new Animal_Terrestre(setNombre, setEdad, setSexo, setEspecie, setPeso, setEstatura, setColor, setEsterilizado, setVacunado, getPelaje, getPatas);
+                            break;
 
                         case 3: // Animal Aviario
                             System.out.println("Ingrese si el animal vuela");
@@ -101,6 +103,7 @@ public class Zoo_prueba2 {
                             System.out.println("Ingrese el tipo de pico del animal");
                             String getPico = scanner.nextLine();
                             nuevoAnimal = new Animal_Aviario(setNombre, setEdad, setSexo, setEspecie, setPeso, setEstatura, setColor, setEsterilizado, setVacunado, getVolar, getPlumaje, getPico);
+                            break;
 
                         default:
                             System.out.println("Tipo de animal no válido.");
@@ -109,6 +112,7 @@ public class Zoo_prueba2 {
 
                     if (nuevoAnimal != null) {
                         animales.add(nuevoAnimal);
+                        quiosco = new Quiosco(animales, hábitats);
                         System.out.println("El nuevo animal ha sido registrado exitosamente.");
                     }
                 } else if (choiceVisitante == 3) {

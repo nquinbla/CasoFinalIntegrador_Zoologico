@@ -3,9 +3,9 @@ package Animales;
 // [1] CLASE ANIMAL ACUÁTICO
 public class Animal_Acuático extends Animal{
     // [2] ATRIBUTOS
-    String nadar; // nadar
-    String aletas; // aletas
-    String branquias; // branquias
+    protected  String nadar; // nadar
+    protected String aletas; // aletas
+    protected String branquias; // branquias
 
     // [3] CONSTRUCTORES
     // Constructor con todos los atributos
@@ -52,5 +52,14 @@ public class Animal_Acuático extends Animal{
     @Override
     public String toString() {
         return "Animal_Acuático{" + "nombre=" + nombre + ", edad=" + edad + ", sexo=" + sexo + ", especie=" + especie + ", peso=" + peso + ", estatura=" + estatura + ", color=" + color + ", esterilizado=" + esterilizado + ", vacunado=" + vacunado + ", nadar=" + nadar + ", aletas=" + aletas + ", branquias=" + branquias + '}';
+    }
+
+    @Override
+    public int hashCode() {
+        int hash = 7;
+        hash = 97 * hash + (this.nadar != null ? this.nadar.hashCode() : 0);
+        hash = 97 * hash + (this.aletas != null ? this.aletas.hashCode() : 0);
+        hash = 97 * hash + (this.branquias != null ? this.branquias.hashCode() : 0);
+        return hash;
     }
 }

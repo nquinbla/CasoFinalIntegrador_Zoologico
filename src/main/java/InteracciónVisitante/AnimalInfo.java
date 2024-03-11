@@ -30,6 +30,9 @@ public class AnimalInfo {
         this.vacunado = vacunado;
     }
 
+    public AnimalInfo(String nombre, String especie, String sexo, String edad, String peso, String estatura, String color, boolean esterilizado, boolean vacunado) {
+    }
+
     // existing getters and setters...
 
     public String getNombreAnimal() {

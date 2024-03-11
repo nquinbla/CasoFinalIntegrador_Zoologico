@@ -1,4 +1,6 @@
 package InteracciónVisitante;
+import Animales.Animal;
+import InteracciónVisitante.AnimalInfo;
 
 import java.util.List;
 import Animales.Animal;
@@ -16,7 +18,7 @@ public class Quiosco {
     public AnimalInfo obtenerInfoAnimal(String nombreAnimal) {
         for (Animal animal : animales) {
             if (animal.getNombre().equals(nombreAnimal)) {
-                return new AnimalInfo(animal.getNombre(), animal.getEspecie(),  animal.getSexo(), animal.getEdad(), animal.getPeso(), animal.getEstatura(), animal.getColor(), animal.isEsterilizado(), animal.isVacunado());
+                return new AnimalInfo(animal.getNombre(), animal.getEspecie(), animal.getSexo(), animal.getEdad(), animal.getPeso(), animal.getEstatura(), animal.getColor(), animal.isEsterilizado(), animal.isVacunado());
             }
         }
         return null; // Devuelve null si no se encuentra el animal

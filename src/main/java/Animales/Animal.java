@@ -14,13 +14,13 @@ public class Animal { // atributos
 
     // [2] CONSTRUCTORES
     // Constructor con todos los atributos
-    public Animal(String nombre, String edad, String sexo, String especie, String peso, String estatura, String color, boolean esterilizado, boolean vacunado) {
+    public Animal(String nombre, String edad, String sexo, int especie, double peso, double estatura, String color, boolean esterilizado, boolean vacunado) {
         this.nombre = nombre;
         this.edad = edad;
         this.sexo = sexo;
-        this.especie = especie;
-        this.peso = peso;
-        this.estatura = estatura;
+        this.especie = String.valueOf(especie);
+        this.peso = String.valueOf(peso);
+        this.estatura = String.valueOf(estatura);
         this.color = color;
         this.esterilizado = esterilizado;
         this.vacunado = vacunado;

@@ -8,10 +8,10 @@ public class Animal_Terrestre extends Animal{
 
     // [3] CONSTRUCTORES
     // Constructor con todos los atributos
-    public Animal_Terrestre(String nombre, String edad, String sexo, String especie, String peso, String estatura, String color, boolean esterilizado, boolean vacunado, String pelaje, String patas) {
+    public Animal_Terrestre(String nombre, String edad, String sexo, int especie, double peso, double estatura, String color, boolean esterilizado, boolean vacunado, String pelaje, int patas) {
         super(nombre, edad, sexo, especie, peso, estatura, color, esterilizado, vacunado);
         this.pelaje = pelaje;
-        this.patas = patas;
+        this.patas = String.valueOf(patas);
     }
 
     // [4] MÉTODOS (getters y setters) de los atributos

@@ -9,9 +9,9 @@ public class Animal_Aviario extends Animal {
 
     // [3] CONSTRUCTORES
     // Constructor con todos los atributos
-    public Animal_Aviario(String nombre, String edad, String sexo, String especie, String peso, String estatura, String color, boolean esterilizado, boolean vacunado, String volar, String plumaje, String pico) {
+    public Animal_Aviario(String nombre, String edad, String sexo, int especie, double peso, double estatura, String color, boolean esterilizado, boolean vacunado, boolean volar, String plumaje, String pico) {
         super(nombre, edad, sexo, especie, peso, estatura, color, esterilizado, vacunado);
-        this.volar = volar;
+        this.volar = String.valueOf(volar);
         this.plumaje = plumaje;
         this.pico = pico;
     }

@@ -1,5 +1,7 @@
 package InteracciónVisitante;
 
+import Animales.Animal;
+
 
 public class AnimalInfo {
     private String nombreAnimal;
@@ -70,3 +72,4 @@ public class AnimalInfo {
         return vacunado;
     }
 }
+

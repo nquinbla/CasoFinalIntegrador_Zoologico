@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class Zoo_prueba3 {
+public class Zoo_Main {
     public static void main(String[] args) {
         List<Animal> animales = new ArrayList<>();
         List<Hábitat> hábitats = new ArrayList<>();

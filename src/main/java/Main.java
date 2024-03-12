@@ -56,10 +56,10 @@ public class Main {
                     System.out.println("¿El animal está esterilizado? (true/false):");
                     boolean esterilizado = scanner.nextBoolean();
                     scanner.nextLine();
-
                     System.out.println("¿El animal está vacunado? (true/false):");
                     boolean vacunado = scanner.nextBoolean();
                     scanner.nextLine();
+
 
                     if (tipoAnimal == 1) {
                         System.out.println("Ingrese el tipo de agua del animal (1. Salada, 2. Dulce):");
@@ -72,6 +72,7 @@ public class Main {
 
                         Animal_Acuático animal = new Animal_Acuático(nombre, edad, sexo, tipoAnimal, peso, estatura, color, esterilizado, vacunado, tipoAgua, tipoAleta);
                         animales.add(animal);
+
                     } else if (tipoAnimal == 2) {
                         System.out.println("Ingrese el tipo de alimentación del animal (1. Carnívoro, 2. Herbívoro, 3. Omnívoro):");
                         int tipoAlimentacion = scanner.nextInt();

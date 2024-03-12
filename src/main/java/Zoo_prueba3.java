@@ -152,7 +152,41 @@ public class Zoo_prueba3 {
                 scanner.nextLine();
 
                 if (choiceTrabajador == 1) {
-                    // Aquí se implementarían las opciones para gestionar los recursos
+                    System.out.println("Por favor, seleccione una opción:");
+                    System.out.println("1. Agregar recurso");
+                    System.out.println("2. Eliminar recurso");
+                    System.out.println("3. Listar recursos");
+                    System.out.println("4. Volver al menú principal");
+
+                    int choiceRecurso = scanner.nextInt();
+                    scanner.nextLine();
+
+                    switch (choiceRecurso) {
+                        case 1: // Agregar recurso
+                            System.out.println("Ingrese el nombre del recurso:");
+                            String nombreRecurso = scanner.nextLine();
+                            Recurso nuevoRecurso = new Recurso(nombreRecurso);
+                            recursos.add(nuevoRecurso);
+                            System.out.println("Recurso agregado exitosamente.");
+                            break;
+                        case 2: // Eliminar recurso
+                            System.out.println("Ingrese el nombre del recurso a eliminar:");
+                            String nombreRecursoEliminar = scanner.nextLine();
+                            recursos.removeIf(recurso -> recurso.getNombre().equals(nombreRecursoEliminar));
+                            System.out.println("Recurso eliminado exitosamente.");
+                            break;
+                        case 3: // Listar recursos
+                            System.out.println("Recursos:");
+                            for (Recurso recurso : recursos) {
+                                System.out.println(recurso.getNombre());
+                            }
+                            break;
+                        case 4: // Volver al menú principal
+                            continue;
+                        default:
+                            System.out.println("Opción no válida.");
+                            break;
+                    }
                 } else if (choiceTrabajador == 2) {
                     // Aquí se implementarían las opciones para gestionar el mantenimiento y la seguridad
                 } else if (choiceTrabajador == 3) {

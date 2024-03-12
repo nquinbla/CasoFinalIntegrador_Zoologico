@@ -1,8 +1,5 @@
-import Animales.Animal;
-import Animales.Animal_Acuático;
-import Animales.Animal_Terrestre;
-import Animales.Animal_Aviario;
-import Hábitats.Hábitat;
+import Animales.*;
+import Hábitats.*;
 import MantenimientoSeguridad.*;
 import Recursos.*;
 import InteracciónVisitante.*;

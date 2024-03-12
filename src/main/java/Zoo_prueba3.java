@@ -164,8 +164,8 @@ public class Zoo_prueba3 {
                     switch (choiceRecurso) {
                         case 1: // Agregar recurso
                             System.out.println("Ingrese el nombre del recurso:");
-                            String nombreRecurso = scanner.nextLine();
-                            Recurso nuevoRecurso = new Recurso(nombreRecurso);
+                            String getNombre = scanner.nextLine();
+                            Recursos nuevoRecurso = new Recursos(getNombre);
                             recursos.add(nuevoRecurso);
                             System.out.println("Recurso agregado exitosamente.");
                             break;
@@ -177,7 +177,7 @@ public class Zoo_prueba3 {
                             break;
                         case 3: // Listar recursos
                             System.out.println("Recursos:");
-                            for (Recurso recurso : recursos) {
+                            for (Recursos recurso : recursos) {
                                 System.out.println(recurso.getNombre());
                             }
                             break;

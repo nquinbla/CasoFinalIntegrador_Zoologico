@@ -5,8 +5,8 @@ public class Recursos {
     private String tipo;
     private int cantidad;
 
-    public Recursos(String name, String type, int cantidad) {
-        this.nombre = name;
+    public Recursos(String name) {
+        this.nombre = nombre;
         this.cantidad = cantidad;
     }
 

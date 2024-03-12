@@ -4,6 +4,7 @@ public class Sensor {
     private String id;
     private String ubicacion;
     private String estado;
+    private Object numSerie;
 
     public Sensor(String id, String ubicacion, String estado) {
         this.id = id;
@@ -35,5 +36,13 @@ public class Sensor {
 
     public void setEstado(String estado) {
         this.estado = estado;
+    }
+
+    public Object getNumSerie() {
+        return numSerie;
+    }
+
+    public void setNumSerie(Object numSerie) {
+        this.numSerie = numSerie;
     }
 }

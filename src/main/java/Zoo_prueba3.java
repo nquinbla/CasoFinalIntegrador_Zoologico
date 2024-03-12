@@ -214,21 +214,33 @@ public class Zoo_prueba3 {
                                     cámaraAEliminar = cámara;
                                     break;
                                 }
-                            }
-                            if (cámaraAEliminar != null) {
+                            } if (cámaraAEliminar != null) {
                                 camaras.remove(cámaraAEliminar);
                                 System.out.println("Cámara eliminada exitosamente.");
                             } else {
                                 System.out.println("No se encontró una cámara con el número de serie proporcionado.");
-                            }
-                            break;
+                            } break;
                         case 3: // Agregar sensor
                             Sensor nuevoSensor = new Sensor();
                             sensores.add(nuevoSensor);
                             System.out.println("Sensor agregado exitosamente.");
                             break;
                         case 4: // Eliminar sensor
-                            // Aquí necesitarías implementar la lógica para eliminar un sensor
+                            System.out.println("Ingrese el número de serie del sensor a eliminar:");
+                            String numSerieSensor = scanner.nextLine();
+                            Sensor sensorAEliminar = null;
+                            for (Sensor sensor : sensores) {
+                                if (sensor.getNumSerie().equals(numSerieSensor)) {
+                                    sensorAEliminar = sensor;
+                                    break;
+                                }
+                            }
+                            if (sensorAEliminar != null) {
+                                sensores.remove(sensorAEliminar);
+                                System.out.println("Sensor eliminado exitosamente.");
+                            } else {
+                                System.out.println("No se encontró un sensor con el número de serie proporcionado.");
+                            }
                             break;
                         case 5: // Verificar estado de seguridad
                             boolean estadoSeguridad = seguridad.verificarEstado();

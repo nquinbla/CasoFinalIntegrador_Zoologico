@@ -46,4 +46,17 @@ public class Seguridad {
     }
 
 
+    public boolean verificarEstado() {
+        for (Cámara camara : camaras) {
+            if (camara.getEstado().equals("apagada")) {
+                return false;
+            }
+        }
+        for (Sensor sensor : sensores) {
+            if (sensor.getEstado().equals("apagado")) {
+                return false;
+            }
+        }
+        return true;
+    }
 }

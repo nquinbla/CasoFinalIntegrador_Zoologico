@@ -187,8 +187,45 @@ public class Zoo_prueba3 {
                             System.out.println("Opción no válida.");
                             break;
                     }
-                } else if (choiceTrabajador == 2) {
-                    // Aquí se implementarían las opciones para gestionar el mantenimiento y la seguridad
+                } else if (choiceTrabajador == 2) { // Mantenimiento y Seguridad
+                    System.out.println("Por favor, seleccione una opción:");
+                    System.out.println("1. Agregar cámara");
+                    System.out.println("2. Eliminar cámara");
+                    System.out.println("3. Agregar sensor");
+                    System.out.println("4. Eliminar sensor");
+                    System.out.println("5. Verificar estado de seguridad");
+                    System.out.println("6. Volver al menú principal");
+
+                    int choiceSeguridad = scanner.nextInt();
+                    scanner.nextLine();
+
+                    switch (choiceSeguridad) {
+                        case 1: // Agregar cámara
+                            Cámara nuevaCámara = new Cámara();
+                            camaras.add(nuevaCámara);
+                            System.out.println("Cámara agregada exitosamente.");
+                            break;
+                        case 2: // Eliminar cámara
+                            // Aquí necesitarías implementar la lógica para eliminar una cámara
+                            break;
+                        case 3: // Agregar sensor
+                            Sensor nuevoSensor = new Sensor();
+                            sensores.add(nuevoSensor);
+                            System.out.println("Sensor agregado exitosamente.");
+                            break;
+                        case 4: // Eliminar sensor
+                            // Aquí necesitarías implementar la lógica para eliminar un sensor
+                            break;
+                        case 5: // Verificar estado de seguridad
+                            boolean estadoSeguridad = seguridad.verificarEstado();
+                            System.out.println("Estado de seguridad: " + (estadoSeguridad ? "Seguro" : "No seguro"));
+                            break;
+                        case 6: // Volver al menú principal
+                            continue;
+                        default:
+                            System.out.println("Opción no válida.");
+                            break;
+                    }
                 } else if (choiceTrabajador == 3) {
                     continue;
                 }

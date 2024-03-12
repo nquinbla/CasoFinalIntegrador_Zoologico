@@ -206,7 +206,21 @@ public class Zoo_prueba3 {
                             System.out.println("Cámara agregada exitosamente.");
                             break;
                         case 2: // Eliminar cámara
-                            // Aquí necesitarías implementar la lógica para eliminar una cámara
+                            System.out.println("Ingrese el número de serie de la cámara a eliminar:");
+                            String numSerie = scanner.nextLine();
+                            Cámara cámaraAEliminar = null;
+                            for (Cámara cámara : camaras) {
+                                if (cámara.getNumSerie().equals(numSerie)) {
+                                    cámaraAEliminar = cámara;
+                                    break;
+                                }
+                            }
+                            if (cámaraAEliminar != null) {
+                                camaras.remove(cámaraAEliminar);
+                                System.out.println("Cámara eliminada exitosamente.");
+                            } else {
+                                System.out.println("No se encontró una cámara con el número de serie proporcionado.");
+                            }
                             break;
                         case 3: // Agregar sensor
                             Sensor nuevoSensor = new Sensor();

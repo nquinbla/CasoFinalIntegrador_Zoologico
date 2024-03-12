@@ -29,6 +29,7 @@ public class Zoo_Main {
             scanner.nextLine();
 
             if (choice == 1) { // Visitante
+                System.out.println("------------------ VISITANTES ------------------");
                 System.out.println("Bienvenido al zoológico virtual de Arapiles, visitante, por favor, seleccione una opción:");
                 System.out.println("1. Ver un animal");
                 System.out.println("2. Registrar un nuevo animal");
@@ -140,6 +141,7 @@ public class Zoo_Main {
                     continue;
                 }
             } else if (choice == 2) { // Trabajador
+                System.out.println("------------------ TRABAJADOR ------------------");
                 System.out.println("Bienvenido al zoológico de Arapiles, trabajador, por favor, seleccione una opción:");
                 System.out.println("1. Recursos");
                 System.out.println("2. Mantenimiento y Seguridad");

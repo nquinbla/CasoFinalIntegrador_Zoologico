@@ -6,7 +6,7 @@ public class Sensor {
     private String estado;
     private Object numSerie;
 
-    public Sensor(String id, String ubicacion, String estado) {
+    public Sensor() {
         this.id = id;
         this.ubicacion = ubicacion;
         this.estado = estado;

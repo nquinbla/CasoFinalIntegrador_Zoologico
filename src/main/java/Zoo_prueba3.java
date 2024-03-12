@@ -234,14 +234,12 @@ public class Zoo_prueba3 {
                                     sensorAEliminar = sensor;
                                     break;
                                 }
-                            }
-                            if (sensorAEliminar != null) {
+                            } if (sensorAEliminar != null) {
                                 sensores.remove(sensorAEliminar);
                                 System.out.println("Sensor eliminado exitosamente.");
                             } else {
                                 System.out.println("No se encontró un sensor con el número de serie proporcionado.");
-                            }
-                            break;
+                            } break;
                         case 5: // Verificar estado de seguridad
                             boolean estadoSeguridad = seguridad.verificarEstado();
                             System.out.println("Estado de seguridad: " + (estadoSeguridad ? "Seguro" : "No seguro"));

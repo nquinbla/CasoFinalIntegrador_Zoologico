@@ -6,7 +6,7 @@ public class Cámara {
     private String estado;
     private Object numSerie;
 
-    public Cámara(String id, String ubicacion, String estado) {
+    public Cámara() {
         this.id = id;
         this.ubicacion = ubicacion;
         this.estado = estado;
